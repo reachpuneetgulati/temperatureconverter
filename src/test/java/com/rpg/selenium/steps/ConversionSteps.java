@@ -10,7 +10,7 @@ public class ConversionSteps {
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
-        System.out.println("Checking jenkins");
+        System.out.println("Changed path to pom.xml");
         throw new PendingException();
     }
 
