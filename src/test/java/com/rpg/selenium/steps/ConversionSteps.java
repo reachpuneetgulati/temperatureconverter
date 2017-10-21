@@ -5,12 +5,15 @@ import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
 import cucumber.runtime.PendingException;
 
+import static org.junit.Assert.fail;
+
 public class ConversionSteps {
 
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
         System.out.println("Changed path to pom.xml");
+        fail("Temporary fail");
         throw new PendingException();
     }
 
