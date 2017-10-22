@@ -1,7 +1,7 @@
 Feature: Convert between different units of temperature
 
   Formula: C/5 = (F - 32)/9
-  C = 5(F - 32)/9 = 5(98.6 - 32 =)/9  = 37
+  C = 5(F - 32)/9 = 5(98.6 - 32)/9  = 37
 
   Scenario: Convert  to Celsius from  Fahrenheit
     Given I want to  convert 98.6 degree Fahrenheit to Celsius
