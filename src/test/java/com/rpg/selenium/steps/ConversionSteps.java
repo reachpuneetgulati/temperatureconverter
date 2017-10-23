@@ -8,6 +8,8 @@ import cucumber.api.java.en.When;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -18,15 +20,15 @@ public class ConversionSteps {
 
     private Google mGoogle;
     private TemperatureConversion mTempConversion;
-    private FirefoxDriver mDriver;
+    private WebDriver mDriver;
     private double mInput;
 
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\gulati\\Desktop\\geckodriver-v0.19.0-win64\\geckodriver.exe");
-
-        mDriver = new FirefoxDriver();
+//        System.setProperty("webdriver.gecko.driver","C:\\Users\\gulati\\Desktop\\geckodriver-v0.19.0-win64\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\gulati\\Desktop\\selenium-java-3.6.0\\chromedriver_win32\\chromedriver.exe");
+        mDriver = new ChromeDriver();
         mInput = 98.6;
         mDriver.manage().window().maximize();
         mDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
